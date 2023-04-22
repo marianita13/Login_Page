@@ -37,6 +37,7 @@ main{
     justify-content: center;
     align-items: center;
     font-size: larger;
+    color: rgb(90, 66, 35);
 }
 
 .formulario{
@@ -119,4 +120,9 @@ button{
     position: absolute;
     right: 45px;
     bottom: 6px;
+}
+
+
+::placeholder {
+    color: rgb(238, 129, 211);
 }
