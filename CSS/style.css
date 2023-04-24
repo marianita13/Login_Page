@@ -13,7 +13,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/invitacion-diseno-fondo-botanico-elementos-florales-fondo-marco-dibujado-mano-suave_5808-709.avif);
+    background-image: url(../images/invitacion-diseno-fondo-botanico-elementos-florales-fondo-marco-dibujado-mano-suave_5808-709.avif);
     background-repeat: no-repeat;
     background-position: 30%;
     background-size: cover;
@@ -36,7 +36,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: larger;
+    font-size: 22px;
     color: rgb(90, 66, 35);
 }
 
@@ -76,10 +76,10 @@ input{
 }
 
 .boton{
-    height: 18%;
+    height: 14%;
     width: 100%;
     display: flex;
-    padding-top: 13px;
+    /* padding-top: 13px; */
     justify-content: center;
     align-items: center;
 }
@@ -91,6 +91,11 @@ button{
     border: solid 1px rgb(90, 66, 35);
     background-color: burlywood;
     box-shadow: 3px 3px 4px black;
+}
+
+button:hover{
+    background-color: white;
+    transition: all 1s ease;
 }
 
 .check{
@@ -118,11 +123,20 @@ button{
     stroke: currentColor;
     fill: currentColor;
     position: absolute;
-    right: 45px;
-    bottom: 6px;
+    right: 60px;
+    bottom: 15px;
 }
 
-
-::placeholder {
+:focus::placeholder {
     color: rgb(238, 129, 211);
+}
+
+#texto{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(54, 32, 11);
+    padding-top: 12px;
 }

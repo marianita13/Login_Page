@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,main{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: black;
+}
+
+header{
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+ul{
+    height: 100%;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    color: orangered;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+h1{
+    color: white;
+    text-shadow: white 3px 3px 5px;
+    text-align: center;
+    font-size: 55px;
+    padding-top: 4px;
+}
+
+.acerca{
+    color: white;
+    display: flex;
+    height: 100%;
+}
+
+.carrusel{
+    width: 30%;
+}
+
+.parrafo{
+    width: 70%;
+}
