@@ -10,7 +10,8 @@ html,body,main{
 }
 
 main{
-    background-color: black;
+    background: rgb(128,52,251);
+    background: linear-gradient(36deg, rgba(128,52,251,0.9780287114845938) 1%, rgba(246,108,201,1) 89%);
 }
 
 header{
@@ -39,22 +40,36 @@ ul{
 
 h1{
     color: white;
-    text-shadow: white 3px 3px 5px;
+    text-shadow: rgb(255, 255, 255) 3px 3px 5px;
     text-align: center;
-    font-size: 55px;
-    padding-top: 4px;
+    font-size: 10vh;
+    padding-top: 10px;
 }
 
 .acerca{
     color: white;
     display: flex;
     height: 100%;
+    padding-top: 18px;
 }
 
 .carrusel{
-    width: 30%;
+    width: 40%;
 }
 
 .parrafo{
-    width: 70%;
+    font-size: 3vh;
+    width: 60%;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#uno{
+    background-image: url(../images/14760917222258.jpg);
+    width: 90%;
+    height: 25%;
+}
+.uno{
+    width: 90%;
+    height: 25%;
 }
