@@ -33,6 +33,6 @@ login.addEventListener('click', (evento)=>{
     }else if (existe==true){
         user.value=''
         password.value=''
-        location.assign("../HTML/principal.html")
+        location.assign("./HTML/principal.html")
     }
 })

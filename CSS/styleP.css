@@ -4,14 +4,17 @@
     box-sizing: border-box;
 }
 
-html,body,main{
+html,body{
     height: 100%;
     width: 100%;
 }
 
-main{
-    background: rgb(128,52,251);
-    background: linear-gradient(36deg, rgba(128,52,251,0.9780287114845938) 1%, rgba(246,108,201,1) 89%);
+body{
+    background-color: rgb(255, 216, 157);
+    /* background-image: url(../images/4bfdbcb96f17d85ff74f523870d1c8fe.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 header{
@@ -30,6 +33,7 @@ ul{
     display: flex;
     justify-content: space-between;
     color: orangered;
+    cursor: pointer;
 }
 
 .lista{
@@ -39,37 +43,167 @@ ul{
 }
 
 h1{
-    color: white;
-    text-shadow: rgb(255, 255, 255) 3px 3px 5px;
-    text-align: center;
-    font-size: 10vh;
     padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    text-align: center;
+    font-size: 6vh;
+    height: 100%;
 }
 
 .acerca{
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
-    height: 100%;
-    padding-top: 18px;
+    padding-top: 50px;
+    height: 40%;
 }
 
-.carrusel{
+.carousel-container{
     width: 40%;
+    max-width: 800px;
+    height: 300px;
+    position: relative;
 }
 
 .parrafo{
-    font-size: 3vh;
+    padding-top: 15px;
+    font-size: 2.8vh;
     width: 60%;
     text-align: justify;
     padding-right: 20px;
 }
 
-#uno{
-    background-image: url(../images/14760917222258.jpg);
+.carousel-slide{
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .carousel-slide img {
     width: 90%;
-    height: 25%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.tarjetas{
+    /* padding-left: 20px; */
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7px;
 }
-.uno{
-    width: 90%;
-    height: 25%;
+
+.target{
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 320px;
+    max-width: 320px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: black 5px 5px 5px;
+}
+
+.titulo_target{
+    padding-top: 8px;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_target{
+    width: 22%;
+    padding-top: 15px;
+    height:50%;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+.imagen_target img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.descripcion{
+    height: 20%;
+    width: 100%;
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.precio{
+    padding-top: 20px;
+    padding-bottom: 14px;
+    height: 15%;
+    font-size: medium;
+    text-align: center;
+}
+
+.comprar{
+    border: 1px solid black;
+    height: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    border-radius: 15px;
+    background-color:rgb(146, 255, 250);
+    box-shadow: black 5px 5px 5px;
+}
+
+button:hover{
+    background-color: rgb(255, 156, 76);
+    transition: all 0.7s ease;
+}
+
+.ventana_modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 50%;
+    height: 45%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.modal_header{
+    position: relative;
+}
+
+.modal_close{
+    position: absolute;
+    right: 0;
+    color: black;
+    font-size: xx-large;
 }
