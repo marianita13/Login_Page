@@ -41,7 +41,7 @@ li:hover{
     justify-content: center;
     align-items: center;
     font-family:'Times New Roman', Times, serif;
-    font-size: larger;
+    font-size: x-large;
     text-shadow: rgb(68, 50, 29) 3px 3px 5px;
     padding-top: 15px;
 }
@@ -67,6 +67,7 @@ li:hover{
     width: 90%;
     box-shadow: black 5px 5px 5px;
     transition: all 0.5s;
+    border-radius: 15px;
     
 }
 
@@ -165,6 +166,29 @@ button:hover{
     color: white;
 }
 
+.btn_cancelar{
+    background-color: red;
+    color: white;
+}
+
+.btn_cancelar:hover{
+    background-color: white;
+    color: black;
+}
+
+.ventana_modal .comprar{
+    gap: 20px;
+}
+
+.ventana_modal .compra{
+    background-color: rgb(100, 206, 255);
+    color: black;
+}
+
+.ventana_modal .compra:hover{
+    background-color: white;
+}
+
 .ventana_modal{
     width: 100vw;
     height: 100vh;
@@ -175,22 +199,28 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .modal{
-    width: 30%;
-    height: 85%;
+    height: 580px;
+    width: 430px;
     background-color: white;
     cursor: pointer;
-}
-
-.modal_header{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: black;
+    gap: 10px;
 }
 
 .modal_close{
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
+    align-self: flex-end;
     color: black;
-    font-size: xx-large;
+    font-size: larger;
+    padding-right: 7px;
 }
