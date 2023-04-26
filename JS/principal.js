@@ -27,13 +27,13 @@ async function traer() {
     datos.forEach(element => {
         tarjetas.innerHTML+=`
         <div class="target">
-            <h3 class="titulo_target">${element.title}</h3>
+            <div class="titulo_target"> <h3>${element.title}</h3> </div>
             <div class="imagen">
                 <img src="${element.image}" class="imagen_target">
             </div>
-            <p class="descripcion">${element.description}</p>
-            <p class="precio">$${element.price}</p>
-            <button class="comprar" id="btn${element.id}">COMPRAR</button>
+            <div class="descripcion"> <p>${element.description}</p> </div>
+            <div class="precio"> <p>$${element.price}</p> </div>
+            <div class="comprar"> <button id="btn${element.id}">COMPRAR</button> <div>
         </div>`
     });
 }
