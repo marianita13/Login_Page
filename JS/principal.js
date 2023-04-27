@@ -76,8 +76,8 @@ async function traer() {
         }else if(evento.target.classList.contains('btn_comprar')){ 
             if (confirm(`Seguro que desea comprar ${seleccionado[0].title}`)==true){
             localStorage.setItem('producto',JSON.stringify(seleccionado))
+            location.assign("./index3C.html")
             }
-            location.assign("./HTML/index3C.html")
         }
     })
 

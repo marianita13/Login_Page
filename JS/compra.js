@@ -15,7 +15,7 @@ async function traer(){
     <div class="precio"> <p>$${nuevo[0]['price']}</p> </div>`
 
     regresar.addEventListener('click', () => {
-        location.assign("./HTML/index2.html")
+        location.assign("./index2P.html")
     })
 
 }
