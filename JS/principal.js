@@ -73,13 +73,15 @@ async function traer() {
     ventanaModal.addEventListener('click', (evento) =>{
         if(evento.target.classList.contains('btn_cancelar')){
             cerrarModal();
-        }else if(evento.target.classList.contains('btn_comprar')){
-           
+        }else if(evento.target.classList.contains('btn_comprar')){ 
             if (confirm(`Seguro que desea comprar ${seleccionado[0].title}`)==true){
             localStorage.setItem('producto',JSON.stringify(seleccionado))
             }
+            location.assign("./HTML/index3C.html")
         }
     })
+
+
 }
 
 traer()

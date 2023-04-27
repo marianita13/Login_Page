@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,main{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    height: 15%;
+    padding-top: 20px;
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: rgb(56, 33, 5) 3px 3px 5px;
+    letter-spacing: 2px;
+}
+
+.felicidades{
+    font-size: 50px;
+}
+
+.datos{
+    height: 70%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.titulo_target{
+    height:15%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_product{
+    font-size: 35px;
+}
+
+.imagen{
+    height:70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_target{
+    height: 80%;
+    width: 30%;
+}
+
+.precio{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.boton{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    height: 27%;
+    width: 12%;
+    border-radius: 15px;
+    background-color: rgb(73, 43, 5);
+    color: white;
+    transition: all 0.8s ease;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}

@@ -123,8 +123,8 @@ button:hover{
     stroke: currentColor;
     fill: currentColor;
     position: absolute;
-    right: 60px;
-    bottom: 15px;
+    right: 50px;
+    bottom: 8px;
 }
 
 :focus::placeholder {
